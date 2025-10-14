@@ -1,0 +1,35 @@
+.scroll_wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.scroll_content {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll_tag {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

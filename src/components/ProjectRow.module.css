@@ -1,0 +1,45 @@
+.linkWrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid black;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0;
+  color: black;
+  pointer-events: none;
+}
+
+.row:hover .arrow {
+  opacity: 1;
+}
+
+.projectName {
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  margin-left: 12px;
+}
+
+.projectDescription {
+  width: 80%;
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  margin-left: 12px;
+}
